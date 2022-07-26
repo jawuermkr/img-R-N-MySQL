@@ -1,8 +1,5 @@
 import React, { Fragment } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
-import ReactAudioPlayer from 'react-audio-player'
-import ok from "./source/ok.mp3"
-import audi from "https://sonidosmp3.net/wp-content/uploads/2022/05/Neraton.mp3"
 
 function App() {
   return (
@@ -21,10 +18,9 @@ function App() {
         </form>
         
         <div>
-          <audio src={ok} controls/> <audio controls>
-          <source src={require("./source/ok.mp3")}/>
-          <source src={audi}/>
-          </audio> <ReactAudioPlayer src="./source/ok.mp3" controls> </ReactAudioPlayer>
+          <audio controls>
+            <source src="http://localhost/source/ok.mp3"/>
+          </audio>
         </div>
 
 
