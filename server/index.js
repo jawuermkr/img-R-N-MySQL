@@ -3,6 +3,16 @@ const expressmyconecction = require("express-myconnection")
 const cors = require("cors")
 const mysql = require("mysql2")
 
+//const glob = require('glob');
+// 
+//glob('../client/src/source/*pat*.mp3', (err, files) => {
+//    if (err) {
+//        console.log(err);
+//    } else {
+//        console.log(files);
+//    }
+//});
+
 const app = express()
 
 app.set("port", process.env.PORT || 3001)
