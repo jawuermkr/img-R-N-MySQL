@@ -14,9 +14,10 @@ const upload = multer({
     storage: storage
 })
 
-const {create, conectar} = require("../controladores/imgControl")
+const {conectar, create, search} = require("../controladores/imgControl")
 
-router.post("/insert/:tabla",upload.single("image"), create)
 router.get("/audio/:nombre", conectar)
+router.post("/insert/:tabla",upload.single("image"), create)
+router.get("/buscar/:tabla", search)
 
 module.exports = router; 
